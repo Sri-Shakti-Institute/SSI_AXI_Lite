@@ -20,7 +20,7 @@ ui_in[4] → Start Read
 ui_in[3:2] → Read Address
 When a transaction is started:
 The master drives the appropriate AXI4-Lite signals.
-The slave responds according to AXI protocol.
+The slave responds according to AXI protocol. 
 When the transaction finishes, uo_out[0] goes high (Done).
 On reads, the data is returned via uio_out.
 Effectively, this module hides AXI4-Lite complexity and lets the user test simple memory-mapped transactions.
